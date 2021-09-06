@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyProtfolio</title>
+<!--===============================START-CSS-CODE==========================-->
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+/*============Header-Section================*/
+#header{
+position:fixed;
+background-color:black;
+width:100%;
+height:41px;
+margin:0;
+}
+a{
+	text-decoration:none;
+	display:inline-block;
+	padding:10px;
+	color:white;
+	font-size:18px;
+
+	
+	
+}
+a:hover{
+	background-color:white;
+	color: black;
+	
+}
+
+/*a.active{
+	background-color:green;
+	color: white;
+}*/
+.protfolio{
+					float:right;
+					color:white;
+					font-size:27px;
+					padding-right:20px;
+					font-family:cursive;
+}
+.folio{
+	color:red;
+}
+/*===========about-Section==============*/
+#about-section{
+	background-color:white;
+	width:100%;
+	height:400px;
+	
+	
+}
+.about{
+	text-align:center;
+	font-size:40px;
+	color:black;
+	padding:50px;
+}
+.img2{
+	border:1px solid black;
+	width:200px;
+	height:200px;
+}
+#text1{
+	display:inline-block;
+	font-size:30px;
+	padding-bottom:200px;
+}
+/*=====================================Home-seciton=================*/
+#home{
+	background-color:black;
+	width:100%;
+	height:500px;
+}
+.text{
+	margin-left:200px;
+	padding-top:150px;
+	font-size:30px;
+	color:white;
+	
+
+}
+	li{
+	 list-style:none;
+ } 
+
+.name{
+	font-size:50px;
+	color:white;
+}
+.Hire{
+
+		padding-left:12px;
+		transition:2s;
+		border:1px solid white;
+		background-color:red;
+		width:70px;
+		font-size:20px;
+}
+.photo{
+			 border-radius:50%;
+			 border:2px solid red;
+			 width:240px;
+			 height:240px;
+			 float:right;
+			 margin-top:100px;
+			 margin-right:130px;
+	
+}
+/*=================================Service-section================*/
+ #Services-section{
+	 background-color:indianred;
+	 width:100%;
+	 height:400px;
+
+ }
+	h1{
+		text-align:center;
+		padding:50px;
+		font-size:40px;
+	} 
+/*=================================Skills-Section===============*/
+#skills-section{
+	background-color:gray;
+	width:100%;
+	height:400px;
+}
+
+/*===============================Teams-Section=================*/
+#team{
+	background-color:black;
+	widht:100%;
+	height:500px;         
+	
+	
+}
+
+.img-team{
+					border-radius:50%;
+					border:2px solid red;
+					margin:20px;
+					width:90px;
+					height:90px;
+				margin-left:97px;
+}
+#first{
+	background-color:gray;
+	display:inline-block;
+	width:300px;
+	height:200px;
+	margin:10px;
+	margin-left:20px;
+}
+#first:hover{
+	background-color:indianred;
+ transform: scale(1.1); 
+ color:white;
+ width:300px;
+ height:200px;
+
+}
+.myteam{
+	color:white;
+}
+.kumari{
+	text-align:center;
+	font-size:30px;
+	color:green;
+}
+.developer{
+	text-align:center;
+	font-size:20px;
+
+}
+/*=====================================contacts-section===========*/
+.contact{
+	dispaly:inline-block;
+	
+}
+/*======================================grid-method=================*/
+.grid-container{
+	background-color:indianred;
+	padding:20px;
+	display:grid;
+	grid-template-areas:
+	'header header header header header header'
+	'menu main main main  right  right'
+	'menu footer footer footer footer footer';
+grid-gap:10px;
+}
+.grid-item{
+	background-color:white;
+	border:1px solid black;
+	padding:20px;
+	font-size:30px;
+	text-align:center;
+}
+#grid-1{
+			grid-area:header;
+}
+#grid-2{
+	grid-area:menu;
+}
+#grid-3{
+	grid-area:main;
+}
+#grid-4{
+	grid-area:right;
+}
+#grid-5{
+	grid-area:footer;
+}
+
+
+
+</style>
+<!--================================END-CSS-CODE========================-->
+</head>
+<body>
+<!--===============Navigation-bar=================================-->
+ <div id="header">
+								 <a  class="active" href="#home">Home</a>
+								 <a href="about">Abouts</a>
+								 <a href="skills">Skills</a> 
+								 <a href="service">Services</a>
+								 <a href="team">Teams</a>
+								 <a href="contact">Contacts</a>
+								 <p class="protfolio" href="protfolio">Protfo<spam class="folio">lio.</spam></p>
+								 
+</div>
+<!--=================================Home-Section========================-->
+<div id="home">
+		<img class="photo"src="photo/anita.png">
+		 <ul class="text">
+				 <li>Hello, my name is...</li>
+				 <li class="name">Anita Kumari</li>
+				 <li>And I'm web developer</li><br>
+				 <a class="Hire" href="">Hire me</a>
+				 
+		 </ul>
+
+</div>
+
+<!--=================================Abouts-Section=====================--> 
+ <div id="about-section">
+			<p class="about">Abouts me</p>
+			<p id="text1">I'm Anita and I'm Developer..</p>
+			<img class="img2"src="phtoto/anita.png">
+			<p>lorem50</p>
+			<a class="cv" href="">Download cv</a>
+			
+			</ul>
+ </div>
+<!--=================================Services-Section===================--> 
+ <div id="Services-section">
+ <h1>Services</h1>
+ </div>
+<!--================================Skills-Section=============================-->
+<div id="skills-section">
+<h1>Skills<h1>
+
+</div>
+<!--=============================================teams-Section============-->
+<div id="team">
+<h1 class="myteam">My Teams</h1>
+		<div id="first">
+		<img class="img-team" src="photo/anita.png">
+		<p class="kumari">Anita Kumari</p>
+		<p class="developer">Software developer</p>
+		 </div>
+	<div id="first">
+		<img class="img-team" src="photo/anita.png">
+		<p class="kumari">Anita Kumari</p>
+		<p class="developer">Software developer</p>
+	</div>
+	<div id="first">
+		<img class="img-team" src="photo/anita.png">
+		<p class="kumari">Anita Kumari</p>
+		<p class="developer">Software developer</p>
+	</div>
+	<div id="first">
+		<img class="img-team" src="photo/anita.png">
+		<p class="kumari">Anita Kumari</p>
+		<p class="developer">Software developer</p>
+	</div>
+	</div>
+	<!--================================contacts-section====================-->
+		
+		<h1>Contacts me</h1>
+		<div id="contact-section">
+		 <div class="contact">
+		 <h2>Get in Touch</h2>
+		 <p class="paragraph">I am Anita Kumari, I belong to Bihar in madhubani,I have completed B.tech from Computer Science Engineering</p>
+		</div> 
+		<div class="contact">
+		<h2>Messages</2>
+		</div>
+		 </div>
+		 <!--=======grid-method==========-->
+		 <div class="grid-container">
+		 <div class="grid-item" id="grid-1">Giani Zail Singh Campus College Of Engineering & Technology Bathinda</div>
+		 <div class="grid-item" id="grid-2">
+		 Ranjan kumar<br>Software Developer
+		 </div>
+		 <div class="grid-item" id="grid-3">160280077</div>
+		 <div class="grid-item" id="grid-4">164076</div>
+		 <div class="grid-item" id="grid-5">Email-ranjankrr7892@gmail.com<br>mob-7004355817</div>
+		 
+</body>
+</html>
